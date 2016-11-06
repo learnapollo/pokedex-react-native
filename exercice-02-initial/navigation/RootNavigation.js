@@ -34,9 +34,9 @@ export default class RootNavigation extends React.Component {
         <TabNavigationItem
           id="pokemons"
           renderIcon={isSelected => this._renderIcon('Pokemons', 'ios-paper', isSelected)}>
-          <StackNavigation
+          <StackNavigation 
             defaultRouteConfig={defaultRouteConfig}
-            initialRoute={Router.getRoute('pokemons')}
+            initialRoute={Router.getRoute('pokemons')} 
           />
         </TabNavigationItem>
       </TabNavigation>
@@ -55,7 +55,7 @@ export default class RootNavigation extends React.Component {
         />
         <BaseText
           fontFace="lato-bold"
-          style={[styles.tabTitleText, {color}]}
+          style={[styles.tabTitleText, {color}]} 
           numberOfLines={1}
         >
           {title}

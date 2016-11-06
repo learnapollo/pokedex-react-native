@@ -4686,3 +4686,4 @@ yeoman-welcome@^1.0.0:
   resolved "https://registry.yarnpkg.com/yeoman-welcome/-/yeoman-welcome-1.0.1.tgz#f6cf198fd4fba8a771672c26cdfb8a64795c84ec"
   dependencies:
     chalk "^1.0.0"
+

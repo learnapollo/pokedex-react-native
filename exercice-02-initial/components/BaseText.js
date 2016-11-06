@@ -25,13 +25,13 @@ export class BaseText extends React.Component {
 
   render() {
     return (
-      <RNText
-        {...this.props}
+      <RNText 
+        {...this.props} 
         style={[
-          styles.defaultStyle,
-          this.props.style,
+          styles.defaultStyle, 
+          this.props.style, 
           Font.style(this.getFontType())
-        ]}
+        ]} 
       />
     );
   }
@@ -55,3 +55,4 @@ const styles = StyleSheet.create({
     color: black
   }
 })
+
