@@ -9,8 +9,10 @@ import { BaseText } from 'learnapollo/components/BaseText';
 export default class HomeScreen extends React.Component {
   static route = {
     navigationBar: {
-      visible: false,
-    },
+      title: (route) => {
+        return 'LearnApollo';
+      },
+    }
   }
 
   render() {

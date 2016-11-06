@@ -21,7 +21,7 @@ const defaultRouteConfig = {
   navigationBar: {
     tintColor: Colors.navigationBarTintColor,
     backgroundColor: Colors.navigationBarBackgroundColor,
-    titleStyle: Font.style('josefin-sans'),
+    titleStyle: Font.style('lato-bold'),
   },
 };
 
