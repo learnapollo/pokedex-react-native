@@ -10,6 +10,8 @@ import { TitleWithData } from 'learnapollo/screens/HomeScreen/components/Title';
 export default class HomeScreen extends React.Component {
   static route = {
     navigationBar: {
+      backgroundColor: '#22A699',
+      tintColor: '#fff',
       title: (route) => {
         return 'LearnApollo';
       },

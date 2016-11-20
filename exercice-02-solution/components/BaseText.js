@@ -19,7 +19,7 @@ export class BaseText extends React.Component {
   }
 
   getFontType = () => {
-    if (!this.props.fontFace) return 'josefin-sans';
+    if (!this.props.fontFace) return 'source-sans';
     return this.props.fontFace;
   }
 
@@ -39,7 +39,7 @@ export class BaseText extends React.Component {
 
 type StyleType = *;
 type PropsType = {
-    fontFace: 'lato-bold' | 'josefin-sans',
+    fontFace: 'lato-bold' | 'source-sans',
     style?: StyleType,
     numberOfLines?: number,
     onLayout?: () => any,

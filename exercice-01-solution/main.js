@@ -17,6 +17,8 @@ import {
 } from '@exponent/vector-icons';
 import { ApolloProvider } from 'react-apollo';
 
+import { tint } from 'learnapollo/constants/Colors.js';
+
 import Store from 'learnapollo/state/Store';
 import Client from 'learnapollo/state/Apollo';
 import Router from 'learnapollo/navigation/Router';
@@ -44,7 +46,7 @@ class AppContainer extends Component {
         images: [],
         fonts: [
           {'lato-bold': require('./assets/fonts/Lato-Bold.ttf')},
-          {'josefin-sans': require('./assets/fonts/JosefinSans-Regular.ttf')},
+          {'source-sans': require('./assets/fonts/SourceSansPro-Regular.ttf')},
         ],
       });
     } catch(e) {
@@ -70,7 +72,7 @@ class AppContainer extends Component {
             </NavigationProvider>
           </ApolloProvider>
 
-          {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
+          {Platform.OS === 'ios' && <StatusBar barStyle="light-content" />}
           {Platform.OS === 'android' && <View style={styles.statusBarUnderlay} />}
         </View>
       );
@@ -87,7 +89,7 @@ const styles = StyleSheet.create({
   },
   statusBarUnderlay: {
     height: 24,
-    backgroundColor: 'rgba(0,0,0,0.2)',
+    backgroundColor: tint,
   },
 });
 

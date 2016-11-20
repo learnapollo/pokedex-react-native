@@ -19,7 +19,7 @@ export class Title extends React.Component {
     if (this.props.data.error) {
       return (
         <BaseText
-          fontFace="josefin-sans"
+          fontFace="source-sans"
           style={{fontSize: 14, color: 'red'}}
         >
           Sadly, the requested Trainer does not exist yet.
@@ -33,7 +33,7 @@ export class Title extends React.Component {
     
     return (
       <BaseText
-        fontFace="josefin-sans"
+        fontFace="source-sans"
         style={{fontSize: 14}}
       >
         Hey {this.props.data.Trainer.name}, there are 0 Pokemons in your pokedex
@@ -43,7 +43,7 @@ export class Title extends React.Component {
 }
 
 const TrainerQuery = gql`query {
-  Trainer(name: "Tychot") {
+  Trainer(name: "Tycho") {
     id
     name
   }

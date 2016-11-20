@@ -6,13 +6,12 @@
   "private": true,
   "main": "main.js",
   "dependencies": {
-    "@exponent/ex-navigation": "^1.6.0",
-    "@exponent/samples": "^1.0.2",
-    "@exponent/vector-icons": "^1.0.1",
+    "@exponent/ex-navigation": "^2.0.0",
+    "@exponent/vector-icons": "^2.0.3",
     "apollo-client": "^0.5.0",
-    "exponent": "^10.0.0",
+    "exponent": "^11.0.1",
     "react": "~15.3.2",
     "react-apollo": "^0.5.16",
-    "react-native": "github:exponentjs/react-native#sdk-10.1.2"
+    "react-native": "github:exponentjs/react-native#sdk-11.0.3"
   }
 }
