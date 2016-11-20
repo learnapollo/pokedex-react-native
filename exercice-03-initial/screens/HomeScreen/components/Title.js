@@ -42,16 +42,11 @@ export class Title extends React.Component {
   }
 }
 
-const TrainerQuery = gql`query($name: String!) {
-  Trainer(name: $name) {
+const TrainerQuery = gql`query {
+  Trainer(name: "Tycho") {
+    id
     name
   }
 }`
 
-export const TitleWithData = graphql(TrainerQuery, {
-options: {
-    variables: {
-      name: "Tycho"
-    }
-  }
-})(Title)
+export const TitleWithData = graphql(TrainerQuery)(Title)
