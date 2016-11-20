@@ -5,9 +5,10 @@ import {
 } from 'react-native';
 
 import { BaseText } from 'learnapollo/components/BaseText';
-import { TitleWithData } from 'learnapollo/screens/HomeScreen/components/Title';
+import Router from 'learnapollo/navigation/Router';
+import { TitleWithData } from 'learnapollo/screens/PokemonsListScreen/components/Title';
 
-export default class HomeScreen extends React.Component {
+export default class PokemonsListScreen extends React.Component {
   static route = {
     navigationBar: {
       backgroundColor: '#22A699',
@@ -16,6 +17,12 @@ export default class HomeScreen extends React.Component {
         return 'LearnApollo';
       },
     }
+  }
+
+  _goToDetail = (pokemon) => {
+    this.props.navigation
+      .getNavigator('root')
+      .push(Router.getRoute('pokemonDetail', { pokemon }));
   }
 
   render() {

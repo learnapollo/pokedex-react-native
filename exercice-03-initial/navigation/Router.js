@@ -2,10 +2,12 @@ import {
   createRouter,
 } from '@exponent/ex-navigation';
 
-import HomeScreen from '../screens/HomeScreen';
+import PokemonsListScreen from 'learnapollo/screens/PokemonsListScreen';
+import PokemonDetailScreen from 'learnapollo/screens/PokemonDetailScreen';
 import RootNavigation from './RootNavigation';
 
 export default createRouter(() => ({
-  pokemons: () => HomeScreen,
+  pokemonsList: () => PokemonsListScreen,
+  pokemonDetail: () => PokemonDetailScreen,
   rootNavigation: () => RootNavigation,
 }));

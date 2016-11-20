@@ -14,8 +14,8 @@ import {
 } from '@exponent/vector-icons';
 import { BaseText } from 'learnapollo/components/BaseText';
 
-import Colors from '../constants/Colors';
-import Router from '../navigation/Router';
+import Colors from 'learnapollo/constants/Colors';
+import Router from 'learnapollo/navigation/Router';
 
 const defaultRouteConfig = {
   navigationBar: {
@@ -33,10 +33,10 @@ export default class RootNavigation extends React.Component {
         initialTab="pokemons">
         <TabNavigationItem
           id="pokemons"
-          renderIcon={isSelected => this._renderIcon('Pokemons', 'ios-paper', isSelected)}>
-          <StackNavigation 
+          renderIcon={isSelected => this._renderIcon('Your Pokemons', 'ios-paper', isSelected)}>
+          <StackNavigation
             defaultRouteConfig={defaultRouteConfig}
-            initialRoute={Router.getRoute('pokemons')} 
+            initialRoute={Router.getRoute('pokemonsList')}
           />
         </TabNavigationItem>
       </TabNavigation>
@@ -55,7 +55,7 @@ export default class RootNavigation extends React.Component {
         />
         <BaseText
           fontFace="lato-bold"
-          style={[styles.tabTitleText, {color}]} 
+          style={[styles.tabTitleText, {color}]}
           numberOfLines={1}
         >
           {title}
