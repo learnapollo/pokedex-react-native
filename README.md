@@ -1,4 +1,4 @@
-# pokedex-react-native
+# pokedex-react-native-exponent
 
 Pokedex React Antive Mobile App using and teaching Apollo and GraphQL
 
@@ -18,7 +18,7 @@ cd exercise-01
 yarn install
 ```
 
-Then start the app in your Exponent Developpment Environnement.
+Then start the app in your Exponent Development Environement.
 
 ## Workflow
 
