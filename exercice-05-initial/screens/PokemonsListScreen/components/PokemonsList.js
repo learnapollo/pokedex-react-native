@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
 
 const TrainerQuery = gql`
   query {
-    Trainer(name: "Tycho") {
+    Trainer(name: "__NAME__") {
       id
       name
       ownedPokemons {

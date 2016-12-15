@@ -51,7 +51,7 @@ const TrainerQuery = gql`query($name: String!) {
 export const TitleWithData = graphql(TrainerQuery, {
 options: {
     variables: {
-      name: "Tycho"
+      name: "__NAME__"
     }
   }
 })(Title)
