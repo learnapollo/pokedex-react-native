@@ -4,18 +4,21 @@ import {
   View,
   ListView,
   ActivityIndicator,
-  RecyclerViewBackedScrollView as RecyclerScrollView,
+  ScrollView
 } from 'react-native';
 
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import { filter } from 'graphql-anywhere';
 
+import { createFocusAwareComponent } from '@exponent/ex-navigation';
+
 import { BaseText } from 'learnapollo/components/BaseText';
 
 import { PokemonListItem } from 'learnapollo/screens/PokemonsListScreen/components/PokemonListItem';
 import { Title } from 'learnapollo/screens/PokemonsListScreen/components/Title';
 
+@createFocusAwareComponent
 export class PokemonsList extends Component {
   constructor(props){
     super(props);
@@ -35,6 +38,9 @@ export class PokemonsList extends Component {
       this.setState({
         dataSource: dataSource.cloneWithRows(data.Trainer.ownedPokemons),
       });
+      if (nextProps.isFocused && !this.props.isFocused) {
+        this.props.data.refetch();
+      }
     }
   }
 
@@ -66,7 +72,7 @@ export class PokemonsList extends Component {
         dataSource={this.state.dataSource}
         renderRow={this._renderItem}
         renderHeader={this._renderHeader}
-        renderScrollComponent={props => <RecyclerScrollView {...props} />}
+        renderScrollComponent={props => <ScrollView {...props} />}
         renderSeparator={this._renderSeparator}
         style={styles.listView}
         pageSize={1}
