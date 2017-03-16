@@ -48,7 +48,6 @@ class PokemonCard extends React.Component {
             style={{
               padding: 20,
               height: 60,
-              fontFamily: 'HelveticaNeue-Light',
             }}
             onChangeText={(name) => this.setState({name})}
             value={this.state.name}
@@ -58,7 +57,6 @@ class PokemonCard extends React.Component {
             style={{
               padding: 20,
               height: 60,
-              fontFamily: 'HelveticaNeue-Light',
             }}
             onChangeText={(url) => this.setState({url})}
             value={this.state.url}

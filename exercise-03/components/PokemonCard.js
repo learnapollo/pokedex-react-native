@@ -17,7 +17,6 @@ export default class PokemonCard extends React.Component {
             style={{
               padding: 20,
               height: 60,
-              fontFamily: 'HelveticaNeue-Light',
             }}
             editable={false}
             value={this.props.pokemon.name}
@@ -27,7 +26,6 @@ export default class PokemonCard extends React.Component {
             style={{
               padding: 20,
               height: 60,
-              fontFamily: 'HelveticaNeue-Light',
             }}
             editable={false}
             value={this.props.pokemon.url}

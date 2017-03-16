@@ -8,7 +8,6 @@ export default class CustomText extends React.Component {
     return (
       <Text
         style={{
-          fontFamily: 'HelveticaNeue-Light',
           color: '#7F7F7F',
           ...style
         }}

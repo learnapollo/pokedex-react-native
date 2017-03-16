@@ -27,7 +27,6 @@ export default class CustomText extends React.Component {
         >
           <Text
             style={{
-              fontFamily: 'HelveticaNeue-Light',
               color: '#7F7F7F',
               color: 'white',
               fontSize: 18,
