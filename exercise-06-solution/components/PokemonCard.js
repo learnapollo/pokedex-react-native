@@ -96,18 +96,16 @@ class PokemonCard extends React.Component {
       (this.props.pokemon.name !== this.state.name || this.props.pokemon.url !== this.state.url)
   }
 
-  handleUpdate = () => {
-    this.props.updatePokemon({variables: { id: this.props.pokemon.id, name: this.state.name, url: this.state.url }})
-      .then(() => {
-        Actions.pokedex()
-      })
+  handleUpdate = async () => {
+    await this.props.updatePokemon({variables: { id: this.props.pokemon.id, name: this.state.name, url: this.state.url }})
+
+    Actions.pokedex()
   }
 
-  handleDelete = () => {
-    this.props.deletePokemon({variables: { id: this.props.pokemon.id }})
-      .then(() => {
-        Actions.pokedex()
-      })
+  handleDelete = async () => {
+    await this.props.deletePokemon({variables: { id: this.props.pokemon.id }})
+
+    Actions.pokedex()
   }
 }
 

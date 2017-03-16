@@ -93,13 +93,12 @@ class AddPokemonCard extends React.Component {
     return this.state.name && this.state.url
   }
 
-  handleSave = () => {
+  handleSave = async () => {
     const {name, url} = this.state
     const trainerId = this.props.trainerId
-    this.props.mutate({variables: {name, url, trainerId}})
-      .then(() => {
-        Actions.pokedex()
-      })
+    await this.props.mutate({variables: {name, url, trainerId}})
+
+    Actions.pokedex()
   }
 }
 
