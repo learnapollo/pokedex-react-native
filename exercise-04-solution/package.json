@@ -1,0 +1,25 @@
+{
+  "name": "learnapollo",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios"
+  },
+  "dependencies": {
+    "apollo-client": "^1.0.0-rc.2",
+    "expo": "14.0.2",
+    "graphql-anywhere": "^1.0.0",
+    "graphql-tag": "^1.1.2",
+    "react": "^15.4.2",
+    "react-apollo": "^1.0.0-rc.2",
+    "react-native": "0.41.2",
+    "react-native-router-flux": "^3.37.0"
+  },
+  "devDependencies": {
+    "react-native-scripts": "^0.0.19"
+  }
+}
