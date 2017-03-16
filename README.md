@@ -1,6 +1,6 @@
-# pokedex-react-native-vanilla
+# pokedex-react-native
 
-Pokedex React Native app using and teaching Apollo and GraphQL
+Pokedex React Native app based on CRNA & Expo using and teaching Apollo and GraphQL
 
 > **Live Demo: [http://demo.learnapollo.com](http://demo.learnapollo.com/)**
 
@@ -11,12 +11,11 @@ Pokedex React Native app using and teaching Apollo and GraphQL
 If you haven't done it already, checkout the [hands-on Learn Apollo tutorial](https://learnapollo.com/).
 
 ```sh
-git clone git@github.com:learnapollo/pokedex-react-native-vanilla.git
-cd pokedex-react-native-vanilla
+git clone git@github.com:learnapollo/pokedex-react-native.git
+cd pokedex-react-native
 cd exercise-01
-yarn install # or npm install
-react-native start
-react-native run-ios # or react-native run-android
+yarn
+yarn start
 ```
 
 ## Workflow
