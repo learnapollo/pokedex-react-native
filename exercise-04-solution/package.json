@@ -17,7 +17,6 @@
     "react": "^15.4.2",
     "react-apollo": "^1.0.0-rc.2",
     "react-native": "0.41.2",
-    "react-native-experimental-navigation": "0.26.10",
     "react-native-router-flux": "^3.37.0"
   },
   "devDependencies": {
