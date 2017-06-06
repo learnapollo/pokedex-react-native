@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View, TouchableOpacity } from 'react-native'
 
-export default class CustomText extends React.Component {
+export default class Button extends React.Component {
 
 
   static propTypes = {
